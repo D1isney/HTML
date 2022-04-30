@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业4</title>
+	</head>
+	<style type="text/css">
+		.box {
+			position: relative;
+			width: 530px;
+			height: 334px;
+			margin: auto;
+			background: url(login.gif);
+		}
+		.box1 {
+			position: absolute;
+			top: 170px;
+			left: 120px;
+		}
+		.box1 input {
+			margin-bottom: 10px;
+		}
+		.box1 input:nth-child(1):focus {
+			background-color: yellowgreen;
+		}
+		.btn {
+			margin-left: 50px;
+		}
+		.box2 {
+			position: absolute;
+			top: 270px;
+			left: 100px;
+		}
+	</style>
+	<body>
+		<div class="box">
+			<form action="zccg.html" method="">
+			<div class="box1">
+				管理员：<input type="text" placeholder="username" required="required"><br>
+				密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" placeholder="password" required="required"><br>
+				<input type="submit" value="登录" class="btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" value="重置" >
+			</div>
+			<div class="box2">
+				<input type="checkbox" required="required">我已阅读并同意
+				<a href="#">会员注册协议</a>
+				<a href="#">隐私保护协议</a>
+			</div>
+			</form>
+		</div>
+	</body>
+</html>

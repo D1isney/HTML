@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户调查</title>
+		<style type="text/css">
+			fieldset{
+				background: peachpuff;
+				border-radius: 50px;
+			}
+			input{
+				size: 30dp;
+			}
+			form{
+				width: 600px;
+				height: -moz-calc();
+				margin-left: 420px;
+			}
+			.button1{
+				background: bisque;
+			}
+			.button2{
+				background: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align="center">用户调查</h1>
+		<form action="http://www.haoso.com" method="get" name="form1" target="_blank" >
+			<fieldset>
+				<legend>基本信息</legend>
+				姓名：<input type="text" name="User" required autofocus ><br>
+				网址：<input type="text" name="网址" placeholder="http://"><br>
+				密码：<input type="password" name="password" required><br>
+				确认密码：<input type="password" name="password" required><br>
+				请上传你的照片：<input type="file" value="选择文件" src="image/gif"><br>
+				请选择你喜欢的音乐：
+				<input type="checkbox" name = "music" value="摇滚乐">摇滚乐
+				<input type="checkbox" name = "music" value="爵士乐">爵士乐
+				<input type="checkbox" name = "music" value="流行乐">流行乐<br>
+				请选择你居住的城市：
+				<input type="radio" name = "address" value="北京">北京
+				<input type="radio" name = "address" value="上海">上海
+				<input type="radio" name = "address" value="南京">南京
+				<br>
+			</fieldset>
+		<br>
+			<fieldset>
+				<legend>详细信息</legend>
+				请输入你的E-mail（email域）：<input type="email" form="form1"><br>
+				请输入你的微博网址（URL域）：<input type="url"><br>
+				请输入您的年龄（number域）：<input type="number" min="0" max="150"><br>
+				请调整背景音乐的音量（range域）：<input type="range"><br>
+				选择您开学的日期（Date Pickers域）：<input type="date"><br>
+				网页设计概念搜索（search域）：<input type="search"><br>
+				你最喜欢的颜色（color域）：<input type="color"><br>
+				请留下的您的电话号码（tel域）：<input type="tel"><br>
+			</fieldset>
+			<button class="button1">提交</button>
+			<button class="button2" type="reset">重置按钮</button>
+			
+	</form>
+	</body>
+</html>
